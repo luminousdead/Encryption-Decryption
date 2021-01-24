@@ -1,6 +1,6 @@
 package encryptor;
 
-public class Encryptor {
+public class EncryptorDecryptor {
     // abcdefghijklmnopqrstuvwxyz
     // A aB bC cD dE eF fG gH hI iJ jK kL lM mN nO oP pQ qR rS sT tU uV vW wX xY yZ z
     private static String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase();
