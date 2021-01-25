@@ -36,7 +36,6 @@ public abstract class Cryptor {
         if (out == null) {
             System.out.println(cryptString);
         } else {
-            // напечатать в файл sting
             file = new File(out);
             try (FileWriter writer = new FileWriter(file)) {
                 writer.write(cryptString);

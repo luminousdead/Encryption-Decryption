@@ -23,7 +23,6 @@ public class ShiftCryptor extends Cryptor{
                     tmpX = 0;
             }
 
-
             if (Character.isUpperCase(msg[i])) {
                 output += alphabetUp.charAt(tmpX);
             } else {

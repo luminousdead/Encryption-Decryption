@@ -1,5 +1,5 @@
 import cryptors.Cryptor;
-import cryptors.CryptorCreator;
+import cryptors.CryptorFactory;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,8 +24,8 @@ public class Main {
             if (args[i].equals("-alg"))
                 alg = args[i + 1];
         }
-        CryptorCreator cryptorCreator = new CryptorCreator(mode, data, in, out, key, alg);
-        Cryptor cryptor = cryptorCreator.createCryptor();
+        CryptorFactory factory = new CryptorFactory(mode, data, in, out, key, alg);
+        Cryptor cryptor = factory.createCryptor();
         cryptor.work();
     }
 }
